@@ -1,0 +1,16 @@
+name: Self hosted runner
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  Display:
+    runs-on: self-hosted
+    steps:
+    
+      # Checks out the repository this file is in
+      - uses: actions/checkout@v3
+      
+      - name: print single line statement
+        run: |
+          echo Hello, World!
