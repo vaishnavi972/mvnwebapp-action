@@ -6,7 +6,7 @@ on:
 
 jobs:
   local-job:
-    runs-on: self-hosted
+    runs-on: win13-laptop
     steps:
       - name: example-step
         run: echo "Hello World!"
